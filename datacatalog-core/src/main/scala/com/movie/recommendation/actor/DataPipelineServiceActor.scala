@@ -15,15 +15,20 @@ class DataPipelineServiceActor(requestContext: RequestContext) extends Actor {
 
   override def receive: Receive = {
     case CreatePipelines =>{
-      // create record in mongo for this pipeline
+      // TODO: create record in mongo for this pipeline
     }
-    case RunPipelines(id:String) => {
+    case StartPipelines(id:String) => {
       //TODO: Create Worker that will run the work. And supervise till work is complete
       }
-    case CancelPipelines(id:String) => {
+    case StopPipelines(id:String) => {
       //TODO: This is equivalent to stop all workers that are currently running the pipeline
-
     }
+    case GetPipelineMetrics()=> {
+    /* TODO: Should be able to gather details about status of all datastreamed through system.
+    * Example: Events should be persisted in the journal but you should also save some metadata
+    *          in the database
+    */
+  }
     case GetAllPipelines => {
       // Import the JSON format to display json in spray-json
       import com.movie.recommendation.rest.DataPipelineJSONProtocol._

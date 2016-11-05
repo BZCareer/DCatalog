@@ -5,9 +5,9 @@ package com.movie.recommendation.actor
   */
 object DataPipelineOperation {
   case class CreatePipelines()
-  // To run a particular pipeline
-  case class RunPipelines(id:String)
-  case class CancelPipelines(id:String)
+  case class StartPipelines(id:String)
+  case class StopPipelines(id:String)
   case class GetOnePipeline(id:String)
   case class GetAllPipelines()
+  case class GetPipelineMetrics()
 }
