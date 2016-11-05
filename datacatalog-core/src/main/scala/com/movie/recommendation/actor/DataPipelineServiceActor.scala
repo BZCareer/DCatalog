@@ -33,9 +33,10 @@ class DataPipelineServiceActor(requestContext: RequestContext) extends Actor {
       // Import the JSON format to display json in spray-json
       import com.movie.recommendation.rest.DataPipelineJSONProtocol._
       import spray.httpx.SprayJsonSupport.sprayJsonMarshaller
-      // TODO: Replace stubs with JDG query code to pull ratings.
 
       log.info("Get datapipeline list")
+      // TODO: Replace stubs with database  code to pull datapipelines.
+
       requestContext.complete(List(
         new DataPipeline(id="1",name="name-1",sourceId="sourceId-1", sinkId="sinkId-1",cron="*/15 * * * *"),
         new DataPipeline(id="1",name="name-2",sourceId="sourceId-2",sinkId="sinkId-2",cron="*/15 * * * *"),
