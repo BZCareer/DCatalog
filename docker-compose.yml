@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  dcatalog-core:
+    build:
+      context: ./datacatalog-core
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
