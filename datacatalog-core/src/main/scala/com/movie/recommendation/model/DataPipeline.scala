@@ -9,5 +9,5 @@ import reactivemongo.bson.BSONObjectID
   *
   *  @author Zak Hassan <zak.hassan@redhat.com>
   */
-case class DataPipeline (id: BSONObjectID = BSONObjectID.generate, name : String, sourceId : String,
+case class DataPipeline (id: String , name : String, sourceId : String,
                          sinkId : String, cron:String )

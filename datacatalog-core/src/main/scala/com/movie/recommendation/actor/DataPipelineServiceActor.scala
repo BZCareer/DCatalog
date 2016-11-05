@@ -14,7 +14,7 @@ class DataPipelineServiceActor(requestContext: RequestContext) extends Actor {
   val log = Logging(system, getClass)
 
   override def receive: Receive = {
-    case CreatePipelines =>{
+    case CreatePipelines => {
       // TODO: create record in mongo for this pipeline
     }
     case StartPipelines(id:String) => {
@@ -37,11 +37,11 @@ class DataPipelineServiceActor(requestContext: RequestContext) extends Actor {
 
       log.info("Get datapipeline list")
       requestContext.complete(List(
-        new DataPipeline("id-1","name-1","sourceId-1","sinkId-1","*/15 * * * *"),
-        new DataPipeline("id-2","name-2","sourceId-2","sinkId-2","*/15 * * * *"),
-        new DataPipeline("id-3","name-3","sourceId-3","sinkId-3","*/15 * * * *"),
-        new DataPipeline("id-4","name-4","sourceId-4","sinkId-4","*/15 * * * *"),
-        new DataPipeline("id-5","name-5","sourceId-5","sinkId-5","*/15 * * * *")  ))
+        new DataPipeline(id="1",name="name-1",sourceId="sourceId-1", sinkId="sinkId-1",cron="*/15 * * * *"),
+        new DataPipeline(id="1",name="name-2",sourceId="sourceId-2",sinkId="sinkId-2",cron="*/15 * * * *"),
+        new DataPipeline(id="1",name="name-3",sourceId="sourceId-3",sinkId="sinkId-3",cron="*/15 * * * *"),
+        new DataPipeline(id="1",name="name-4",sourceId="sourceId-4",sinkId="sinkId-4",cron="*/15 * * * *"),
+        new DataPipeline(id="1",name="name-5",sourceId="sourceId-5",sinkId="sinkId-5",cron="*/15 * * * *")  ))
       context.stop(self)
     }
     case _ => {  }
