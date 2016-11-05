@@ -1,5 +1,7 @@
 package com.movie.recommendation.model
 
+import reactivemongo.bson.BSONObjectID
+
 /**
   * DataPipeline <br>
   *
@@ -7,5 +9,5 @@ package com.movie.recommendation.model
   *
   *  @author Zak Hassan <zak.hassan@redhat.com>
   */
-case class DataPipeline (datapipelineId : String, name : String, sourceId : String,
+case class DataPipeline (id: String , name : String, sourceId : String,
                          sinkId : String, cron:String )
