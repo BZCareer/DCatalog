@@ -11,7 +11,7 @@
     "pipeline",
     "service"
   ],
-  "homepage": "https://github.com/BZCareer/DCatalog",
+"homepage": "https://github.com/BZCareer/DCatalog",
   "ignore": [
     "**/.*",
     "node_modules",
