@@ -1,0 +1,32 @@
+{
+  "name": "datacatalog-web",
+  "description": "Frontend web client for DCatalog",
+  "main": "server.js",
+  "authors": [
+    "Zak Hassan <zak.hassan1010@gmail.com>"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [
+    "data",
+    "pipeline",
+    "service"
+  ],
+  "homepage": "https://github.com/BZCareer/DCatalog",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-loader": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "morris.js": "^0.5.1"
+  }
+}
