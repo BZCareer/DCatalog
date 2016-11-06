@@ -1,0 +1,27 @@
+{
+  "name": "datacatalog-web",
+  "version": "1.0.0",
+  "description": "Frontend web client for DCatalog",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BZCareer/DCatalog.git"
+  },
+  "keywords": [
+    "data",
+    "pipeline",
+    "service"
+  ],
+  "author": "Zak Hassan <zak.hassan1010@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/BZCareer/DCatalog/issues"
+  },
+  "homepage": "https://github.com/BZCareer/DCatalog#readme",
+  "dependencies": {
+    "bower": "^1.7.9"
+  }
+}
